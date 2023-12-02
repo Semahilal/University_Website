@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UNIVERSITY</title>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <style>
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .highlight{
+                color: rgb(137, 0, 0);
+                font-size: xx-large;
+            }
+
+            .normal{
+                color: rgb(137, 0, 0);
+            }
+
+            #header{
+                text-align: center;
+                font-size: large;
+                font-family: 'Gill Sans';
+                padding-top: 12.5px;
+                padding-bottom: 12.5px;
+                
+                height: 100%;
+        
+                background-image: url(https://avatars.mds.yandex.net/i?id=4365a87776851db1881843460f1f8b36f3669a2f-5365143-images-thumbs&n=13);
+                background-size: cover;
+                
+            }
+            #right{
+                float: right;
+                width: 80%;
+                height: 100%;
+                margin-top: 0%;
+            }
+
+            #nav-left {
+                width: 20%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                height: 650px;
+
+                background-color: rgb(0, 0, 0);
+                float: left
+               
+            }
+
+            #footer{
+                text-align: center;
+            }
+
+             #external{
+                background-color: lightgrey;
+            }
+
+            .university-img {
+            position: relative;
+            }
+
+            .university-img img {
+            width: 50%;
+            height: auto;
+            padding: 1%;
+            }
+
+            .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s;
+            background-color: rgba(0,0,0,0.5);
+            }
+
+            .university-img:hover .overlay {
+            opacity: 1;
+            }
+
+            #subheading{
+              padding-left: 70%;
+              
+            }
+
+            #paragraph{
+                margin-bottom: 0%;
+               
+            }
+            image{
+                float: left;
+            }
+            #text{
+                float: right;               
+            
+                padding-right:15%;
+                padding-top: 11%;
+                color: beige;
+                font-weight: 800;
+            }
+
+            #ch{
+                display: none;
+            }
+
+            label{
+                display: inline-block;
+                cursor: pointer;
+                color: #fff;
+                background-color: black;
+                padding: 3px 13px;
+                
+              
+
+            }
+            #ch:checked ~ .content{
+                display: block;
+            }
+
+            #ch:checked ~ label{
+                display: none;
+            }
+            .content{
+             display: none;
+            }
+
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <fieldset id="external">
+
+            <fieldset id="header">
+                <div id="header">
+                    <h1 style="color: azure;">ESKİŞEHİR TECHNICAL UNIVERSITY</h1>
+                </div>
+            </fieldset>
+
+
+            <fieldset id="right">
+                <div class="container p-3 my-3 bg-dark text-white">
+                    <h2 id="text" >ABOUT US</h2>
+                    <div id="image">
+                        <div class="university-img">
+                            <img src="https://menemensaofen.meb.k12.tr/meb_iys_dosyalar/35/17/762133/resimler/2021_05/k_02234408_eskisehir-teknik-universitesi.jpg" alt="University image">
+                            <div class="overlay"> </div>
+                        </div>
+                    </div>
+                    
+
+                        <input type="checkbox" id="ch">
+
+                        <p>Eskişehir Technical University consists of 5 Faculties, 2 Vocational Schools, 1 School and 3 Institutions and 4 Research 
+                        and Application Centers in 3 campuses located in the center of Eskişehir, which is a city of science, culture and youth.</p>
+
+                        <div class="content">
+                            <p >Eskişehir Technical University works to prepare its students for the future as the most equipped 
+                            and competitive individuals in creative and dynamic educational environments, thanks to its competent teaching staff in 
+                            all its units with strong infrastructure, where education and research activities are carried out. The operation of the 
+                            international Hasan Polatkan Airport, located in the 2 Eylül Campus of our university, is carried out by our Faculty of 
+                            Aeronautics and Space Sciences. There are international flights to Hasan Polatkan Airport operated via different airline 
+                            companies on various days of the week.</p>
+                        
+                            <label for="ch" >Show Less</label>
+                        </div>
+                        
+                        <label for="ch" >Show More</label>
+                                          
+                 </div>
+
+            </fieldset>
+                
+        
+               
+            <fieldset id="nav-left" >
+                <div class="container">
+                  <img src="https://www.istanbulteknik.com/tr/img/isbirlikcilerimiz/eskisehir-teknik-universitesi_logo.png" width="100%" >
+                    <ul><br>
+                        <li><a class="normal" href="Home.html">  HOME</a></li><br>
+                        <li><a class="highlight" href="University.html">  UNIVERSITY</a></li><br>
+                        <li><a class="normal" href="Academics.html">  ACADEMICS</a></li><br>
+                        <li><a class="normal" href="Students.html">  STUDENTS</a></li><br>
+                        <li><a class="normal" href="Campuslife.html">  CAMPUS LIFE</a></li><br>
+                    </ul>
+                </div>
+            </fieldset>
+
+            <footer id="footer">
+                Author: Sema Hilal ŞEN - All rights reserved.
+            </footer>
+
+        </fieldset>
+       
+
+    </body>
+</html>

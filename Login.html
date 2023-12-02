@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+
+        <style>
+
+            * {
+                box-sizing: border-box;
+            }
+            .highlight{
+                color: rgb(137, 0, 0);
+                font-size: xx-large;
+            }
+            .normal{
+                color: rgb(137, 0, 0);
+            }
+
+            #header{
+                text-align: center;
+                font-size: large;
+                font-family: 'Gill Sans';
+                padding-top: 12.5px;
+                padding-bottom: 12.5px;
+                
+                height: 100%;
+        
+                background-image: url(https://avatars.mds.yandex.net/i?id=4365a87776851db1881843460f1f8b36f3669a2f-5365143-images-thumbs&n=13);
+                background-size: cover;
+                
+            }
+
+            #right{
+                float: right;
+                width: 79%;
+                height: 100%;
+                margin-top: 0%;
+            }
+    
+    
+            #nav-left {
+                width: 20%;
+                height: 200%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+
+                background-color: rgb(0, 0, 0);
+                float: left
+                
+            }
+
+            #footer{
+                text-align: center;
+            }
+
+            #external{
+                background-color: lightgrey;
+            }
+            #center{
+                float: right;
+                padding-right: 8%;
+            }
+            #text{
+                             
+            
+                padding-right:10%;
+                padding-top: 45%;
+                
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <fieldset id="external">
+
+            <fieldset id="header">
+                 <div id="header">
+                    <h1 style="color: azure;">ESKİŞEHİR TECHNICAL UNIVERSITY</h1>
+                </div>
+            </fieldset>
+
+            <fieldset id="right">
+                <div class="container p-3 my-3 bg-dark text-white">                    
+                       
+                    <div id="center">
+                        <form action="Home.html" method="post">
+                            <legend id="text">Please Login</legend>
+                            <label for="username">Username:</label>
+                            <input required type="text" id="username" name="username" placeholder="44113963012"><br>
+                            
+                            <label for="password">Password: </label>
+                            <input required type="password" id="password" name="password" placeholder="123.estü"><br>
+    
+                            <input type="submit" value="send"><br><br>
+                        </form>
+                    </div>
+
+                    <img id="image" src="https://pbs.twimg.com/media/EO45D8zWkAEb0rW.jpg" width="60%" height="40%">
+                           
+                </div>
+                
+            </fieldset>
+               
+            <fieldset id="nav-left" >
+                <div class="container">
+                    <img src="https://www.istanbulteknik.com/tr/img/isbirlikcilerimiz/eskisehir-teknik-universitesi_logo.png" width="100%" >
+                    <ul><br>
+                        <li><a class="normal" href="Home.html">  HOME</a></li><br>
+                        <li><a class="normal" href="University.html">  UNIVERSITY</a></li><br>
+                        <li><a class="normal" href="Academics.html">  ACADEMICS</a></li><br>
+                        <li><a class="normal" href="Students.html">  STUDENTS</a></li><br>
+                            <ul>
+                                <li><a class="normal" href="Documents.html">Documents</a></li><br>
+                                <li><a class="highlight" href="Login.html">Student Login</a></li><br>
+                            </ul>
+                        </li><br>
+                        <li><a class="normal" href="Campuslife.html">  CAMPUS LIFE</a></li><br>
+                    </ul>
+                </div>
+            </fieldset>
+        
+
+            <footer id="footer">
+                Author: Sema Hilal ŞEN - All rights reserved.
+            </footer>
+
+        </fieldset>
+        
+          
+
+        
+      
+
+    </body>
+</html>
